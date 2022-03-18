@@ -1,0 +1,47 @@
+{
+  "name": "node-reverse-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx dotenv node index.js",
+    "build": "vite build && vite build --ssr",
+    "start": "npx dotenv -v NODE_ENV=production node index.js",
+    "test": "echo 'todo test'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/server-renderer": "^3.2.31",
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv-cli": "^5.0.0",
+    "express": "^4.17.2",
+    "express-basic-auth": "^1.2.1",
+    "fson-db": "^2.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "object-hash": "^3.0.0",
+    "request": "^2.88.2",
+    "vite-plugin-ssr": "^0.3.59",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@jest/globals": "^27.5.1",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "autoprefixer": "^10.4.2",
+    "jest": "^27.5.1",
+    "sass": "^1.49.9",
+    "supertest": "^6.2.2",
+    "tailwindcss": "^3.0.18",
+    "vite": "^2.8.0"
+  }
+}
