@@ -11,7 +11,8 @@ const root = `${__dirname}`
 import Path from 'path';
 import {authenticateRequest} from "../api/auth/auth.middleware.js";
 import {accessControlMiddleware} from "./routes.js";
-
+import {getDebug} from "../lib/utils.js";
+const debug = getDebug('ui-server')
 
 export const getWebUserInterfaceRequestListener = async function () {
   const app = express()
@@ -35,6 +36,7 @@ export const getWebUserInterfaceRequestListener = async function () {
   const renderPage = createPageRenderer({ viteDevServer, isProduction, root })
   app.get('*', async (req, res, next) => {
     const url = req.originalUrl
+    debug('rendering url:',url)
     const pageContextInit = {
       url,
     }

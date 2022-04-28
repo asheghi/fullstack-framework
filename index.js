@@ -1,7 +1,7 @@
 import http from "http";
 import Express from 'express';
-import {getWebUserInterfaceRequestListener} from "./web-ui/index.js";
-import {ApiRouter} from "./api/api.router.js";
+import { getWebUserInterfaceRequestListener } from "./web-ui/index.js";
+import { ApiRouter } from "./api/api.router.js";
 import cookieParser from 'cookie-parser'
 const app = Express();
 const webUI = await getWebUserInterfaceRequestListener();

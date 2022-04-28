@@ -1,5 +1,6 @@
 import { getPage } from "vite-plugin-ssr/client";
 import { createApp } from "./app.js";
+import {enableDebug} from "../../plugins/debug.js";
 
 try {
   hydrate().then(ignored => {});
@@ -12,3 +13,5 @@ async function hydrate() {
   const app = createApp(pageContext);
   app.mount("#app");
 }
+
+enableDebug();

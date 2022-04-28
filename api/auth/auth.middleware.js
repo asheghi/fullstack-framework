@@ -1,13 +1,14 @@
 import db from "../../lib/database.js";
 import JwtUtils from "../../lib/jwt-utils.js";
-const debug = console.log;
+import {getDebug} from "../../lib/utils.js";
+const debug = getDebug('auth.middleware');
 
 // try to fill req.user based on jwt token inside cookie header
 export const authenticateRequest = (req, res, next) => {
   try {
     JwtUtils.verifyRequest(req);
   } catch (e) {
-    // ignore error
+    debug('failed to authenticate',e.message);
   }
   return next();
 };

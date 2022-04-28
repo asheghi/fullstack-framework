@@ -12,6 +12,7 @@ export const AdminRoutes = [
   {
     name: 'dashboard',
     path: '/dashboard',
+    route:'/dashboard/*',
   }
 ]
 
