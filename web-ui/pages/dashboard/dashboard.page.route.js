@@ -1,3 +1,3 @@
 import { getRouteByName }  from '../../routes.js';
 
-export default getRouteByName('dashboard').path;
+export default getRouteByName('dashboard').route;
