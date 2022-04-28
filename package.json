@@ -14,34 +14,34 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vue/server-renderer": "^3.2.31",
+    "@vue/server-renderer": "^3.2.33",
     "axios": "^0.26.1",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.2",
+    "body-parser": "^1.20.0",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "debug": "^4.3.3",
-    "dotenv-cli": "^5.0.0",
-    "express": "^4.17.2",
+    "debug": "^4.3.4",
+    "dotenv-cli": "^5.1.0",
+    "express": "^4.17.3",
     "express-basic-auth": "^1.2.1",
     "fson-db": "^2.0.3",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "object-hash": "^3.0.0",
     "request": "^2.88.2",
-    "vite-plugin-ssr": "^0.3.59",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.12"
+    "vite-plugin-ssr": "^0.3.64",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@jest/globals": "^27.5.1",
-    "@vitejs/plugin-vue": "^2.2.0",
-    "autoprefixer": "^10.4.2",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "autoprefixer": "^10.4.4",
     "jest": "^27.5.1",
-    "sass": "^1.49.9",
+    "sass": "^1.50.0",
     "supertest": "^6.2.2",
-    "tailwindcss": "^3.0.18",
-    "vite": "^2.8.0"
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.5"
   }
 }
