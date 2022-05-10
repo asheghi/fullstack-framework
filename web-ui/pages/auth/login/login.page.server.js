@@ -1,4 +1,4 @@
-import db from "../../../../lib/database";
+import db from "../../../../lib/database.js";
 import {getRouteByName} from "../../../routes.js";
 import {getDebug} from "../../../../lib/utils.js";
 const debug = getDebug('login:ss')

@@ -1,5 +1,6 @@
-import {comparePassword, getDebug, hashPassword} from "../../lib/utils.js";
+import {getDebug,} from "../../lib/utils.js";
 import db from "../../lib/database.js";
+import {comparePassword, hashPassword} from "../../lib/jwt-utils.js";
 
 const debug = getDebug('auth.service');
 

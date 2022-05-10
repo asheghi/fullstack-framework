@@ -1,5 +1,3 @@
-import {authenticateRequest} from "../api/auth/auth.middleware.js";
-
 export const AdminRoutes = [
   {
     name: 'home',
